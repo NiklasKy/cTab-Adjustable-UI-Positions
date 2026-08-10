@@ -1,0 +1,17 @@
+name = "GRP9 cTab UI Position Fix"
+prefix = "grp9_ctab_position_fix"
+author = "Gruppe 9"
+mainprefix = "z"
+
+[files]
+include = [
+    "README.md",
+    "keys/**",
+]
+
+[version]
+major = 1
+minor = 0
+patch = 2
+build = 0
+git_hash = 0

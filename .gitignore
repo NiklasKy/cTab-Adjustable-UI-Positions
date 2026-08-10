@@ -1,0 +1,10 @@
+.hemttout/
+private/
+*.biprivatekey
+.hemttprivatekey
+*.pbo
+*.bisign
+*.zip
+.vscode/
+.DS_Store
+Thumbs.db

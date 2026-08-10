@@ -1,0 +1,31 @@
+name: HEMTT
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hemtt-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Set up HEMTT
+        uses: arma-actions/hemtt@a0570ddd80d2b7be9c0f052494c0f700b42668dd # v1
+
+      - name: Check project
+        run: hemtt check --no-color
+
+      - name: Build project
+        run: hemtt build --no-color
