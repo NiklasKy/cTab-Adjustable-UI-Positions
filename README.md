@@ -1,15 +1,20 @@
-# GRP9 cTab UI Position Fix
+# cTab - Adjustable UI Positions
 
-This client-side compatibility addon adds Arma 3 UI layout editor entries for
-the overlay displays of the original cTab mod.
+> Put your cTab overlays exactly where you want them.
+
+cTab UIP is a client-side addon that adds Arma 3 Layout Editor entries for
+cTab overlay displays. Players can move each supported overlay and configure
+separate primary and alternate positions without modifying cTab itself.
 
 ## Requirements
 
 - Arma 3
 - CBA_A3
-- Original cTab (`CfgPatches` class `cTab`)
+- cTab (`CfgPatches` class `cTab`)
 
-MokTech Industries Core is not required.
+Compatible cTab derivatives may also work when they retain the required display
+classes and behavior, but support for derivatives is provided on a best-effort
+basis.
 
 ## Supported displays
 
@@ -18,13 +23,13 @@ MokTech Industries Core is not required.
 - MicroDAGR overlay
 - Alternate position for each overlay, used by cTab's position-toggle keybind
 
-The large interactive dialogs are not changed. Original cTab already allows
+The large interactive dialogs are not changed. cTab already allows
 those dialogs to be dragged and remembers their offsets.
 
 ## Usage
 
-1. Copy `@GRP9 cTab UI Position Fix` into the Arma 3 installation directory.
-2. Load CBA_A3, original cTab, and this patch in that order.
+1. Copy `@cTab Adjustable UI Positions` into the Arma 3 installation directory.
+2. Load CBA_A3, cTab, and this addon.
 3. Open Arma 3's UI layout editor.
 4. Move the `cTab` layout entries to the desired positions and save.
 5. Open the corresponding cTab overlay.
@@ -33,7 +38,7 @@ The positions are stored in the active Arma profile. Use the layout editor's
 reset function to restore the defaults.
 
 For a server with signature verification enabled, copy only
-`keys/grp9_ctab_position_fix_1_0_0.bikey` to the server's `keys` directory.
+`keys/ctab_uip_1_0_0.bikey` to the server's `keys` directory.
 Never distribute the `.biprivatekey` signing key.
 
 ## Build
@@ -55,12 +60,12 @@ public key.
 - Repeat for TAD and MicroDAGR if those devices are used.
 - Restart Arma and confirm that the positions persist.
 - Check the client RPT for
-  `[GRP9 cTab UI Position Fix] Initialized position watcher.` and for the
+  `[cTab UIP] Initialized position watcher.` and for the
   absence of cTab script errors.
 
 ## Compatibility approach
 
-The addon does not replace original cTab assets, equipment classes, marker
+The addon does not replace cTab assets, equipment classes, marker
 logic, network code, or compile-final functions. Each supported overlay applies
 its profile position during `onLoad`, before the first visible frame. A small
 client-side watcher remains as a fallback for primary/alternate position
@@ -70,8 +75,15 @@ changes.
 
 Original cTab authors: Riouken, Gundy, and Raspu.
 
-The UI-grid approach is based on the catTab implementation by Cat Harsis and
-the MokTech Industries fork. Modified integration code by Gruppe 9.
+Layout Editor integration based on the catTab implementation by Cat Harsis and
+the MokTech Industries fork.
+
+Maintained by [GRP9] Niklas Ky.
 
 This derivative addon is distributed under the GNU General Public License,
 version 2. See `LICENSE`.
+
+## Source and support
+
+- Source: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions
+- Issues: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions/issues

@@ -5,7 +5,7 @@
 - HEMTT
 - Arma 3
 - CBA_A3
-- Original cTab
+- cTab
 
 ## Local validation
 
@@ -22,6 +22,6 @@ client RPT for script or config errors.
 ## Code style
 
 - Keep code and documentation in English.
-- Preserve original cTab behavior outside overlay positioning.
+- Preserve cTab behavior outside overlay positioning.
 - Do not commit private signing keys, PBOs, signatures, release archives, or
   `.hemttout` build output.

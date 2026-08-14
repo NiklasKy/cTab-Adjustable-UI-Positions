@@ -1,19 +1,19 @@
 if (!hasInterface) exitWith {};
-if (missionNamespace getVariable ["grp9_ctab_position_fix_initialized", false]) exitWith {};
+if (missionNamespace getVariable ["ctab_uip_initialized", false]) exitWith {};
 
-missionNamespace setVariable ["grp9_ctab_position_fix_initialized", true];
-missionNamespace setVariable ["grp9_ctab_position_fix_lastState", []];
+missionNamespace setVariable ["ctab_uip_initialized", true];
+missionNamespace setVariable ["ctab_uip_lastState", []];
 
 [{
     if (isNil "cTabIfOpen" || {count cTabIfOpen < 2}) exitWith {
-        missionNamespace setVariable ["grp9_ctab_position_fix_lastState", []];
+        missionNamespace setVariable ["ctab_uip_lastState", []];
     };
 
     if (isNil "cTab_fnc_isDialog" || {isNil "cTab_fnc_getSettings"}) exitWith {};
 
     private _displayName = cTabIfOpen select 1;
     if ([_displayName] call cTab_fnc_isDialog) exitWith {
-        missionNamespace setVariable ["grp9_ctab_position_fix_lastState", []];
+        missionNamespace setVariable ["ctab_uip_lastState", []];
     };
 
     disableSerialization;
@@ -26,16 +26,16 @@ missionNamespace setVariable ["grp9_ctab_position_fix_lastState", []];
     };
 
     private _state = [_displayName, _useAlternatePosition, _display];
-    if (_state isEqualTo (missionNamespace getVariable ["grp9_ctab_position_fix_lastState", []])) exitWith {};
+    if (_state isEqualTo (missionNamespace getVariable ["ctab_uip_lastState", []])) exitWith {};
 
-    if ([_displayName] call grp9_ctab_position_fix_fnc_applyInterfacePosition) then {
-        missionNamespace setVariable ["grp9_ctab_position_fix_lastState", _state];
+    if ([_displayName] call ctab_uip_fnc_applyInterfacePosition) then {
+        missionNamespace setVariable ["ctab_uip_lastState", _state];
         diag_log format [
-            "[GRP9 cTab UI Position Fix] Applied %1 position to %2.",
+            "[cTab UIP] Applied %1 position to %2.",
             ["primary", "alternate"] select _useAlternatePosition,
             _displayName
         ];
     };
 }, 0.05] call CBA_fnc_addPerFrameHandler;
 
-diag_log "[GRP9 cTab UI Position Fix] Initialized position watcher.";
+diag_log "[cTab UIP] Initialized position watcher.";

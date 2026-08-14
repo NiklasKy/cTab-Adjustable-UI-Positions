@@ -1,0 +1,47 @@
+[h1]cTab - Adjustable UI Positions[/h1]
+[i]Put your cTab overlays exactly where you want them.[/i]
+
+cTab UIP adds Arma 3 Layout Editor support for cTab overlay displays. Configure their positions through the familiar in-game editor and keep separate layouts for the primary and alternate display states.
+
+[h1]Features[/h1]
+[list]
+[*]Adjustable Android / GD300 overlay position
+[*]Adjustable TAD overlay position
+[*]Adjustable MicroDAGR overlay position
+[*]Separate primary and alternate positions for every supported overlay
+[*]Positions are stored in the active Arma profile
+[*]Displays open directly at their configured position
+[*]Client-side only, with no server or network load
+[/list]
+
+[h1]How to use[/h1]
+[olist]
+[*]Load CBA_A3, cTab, and cTab UIP.
+[*]Open Arma 3's Layout Editor.
+[*]Move the cTab entries to your preferred positions.
+[*]Save the layout and open the corresponding cTab overlay.
+[/olist]
+
+Use the Layout Editor's reset function to restore the default positions.
+
+[h1]Requirements[/h1]
+[list]
+[*]CBA_A3
+[*]cTab
+[/list]
+
+[h1]Compatibility[/h1]
+cTab derivatives may work when they retain compatible display classes and behavior. Compatibility with derivatives is provided on a best-effort basis and cannot be guaranteed.
+
+[h1]Source and support[/h1]
+Source code: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions
+Issue tracker: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions/issues
+
+[h1]Credits and license[/h1]
+Original cTab authors: Riouken, Gundy, and Raspu.
+
+Layout Editor integration based on the catTab implementation by Cat Harsis and the MokTech Industries fork.
+
+Maintained by [GRP9] Niklas Ky.
+
+Licensed under the GNU General Public License, version 2.

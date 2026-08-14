@@ -1,23 +1,23 @@
 class CfgPatches {
-    class grp9_ctab_position_fix_main {
-        name = "GRP9 cTab UI Position Fix";
-        author = "Gruppe 9";
+    class ctab_uip_main {
+        name = "cTab - Adjustable UI Positions";
+        author = "[GRP9] Niklas Ky";
         requiredVersion = 2.18;
         requiredAddons[] = {"cba_main", "cTab"};
         units[] = {};
         weapons[] = {};
-        version = 1.02;
-        versionStr = "1.0.2";
-        versionAr[] = {1, 0, 2};
+        version = 1.0;
+        versionStr = "1.0.0";
+        versionAr[] = {1, 0, 0};
     };
 };
 
 class CfgFunctions {
-    class grp9_ctab_position_fix {
-        tag = "grp9_ctab_position_fix";
+    class ctab_uip {
+        tag = "ctab_uip";
 
         class main {
-            file = "\z\grp9_ctab_position_fix\addons\main\functions";
+            file = "\z\ctab_uip\addons\main\functions";
 
             class applyInterfacePosition {};
         };
@@ -25,8 +25,8 @@ class CfgFunctions {
 };
 
 class Extended_PostInit_EventHandlers {
-    class grp9_ctab_position_fix_main {
-        clientInit = "call compile preprocessFileLineNumbers '\z\grp9_ctab_position_fix\addons\main\XEH_postInit_client.sqf'";
+    class ctab_uip_main {
+        clientInit = "call compile preprocessFileLineNumbers '\z\ctab_uip\addons\main\XEH_postInit_client.sqf'";
     };
 };
 
@@ -142,14 +142,14 @@ class CfgUIGrids {
 
 class RscTitles {
     class cTab_Android_dsp {
-        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_Android_dsp'] call grp9_ctab_position_fix_fnc_applyInterfacePosition;";
+        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_Android_dsp'] call ctab_uip_fnc_applyInterfacePosition;";
     };
 
     class cTab_TAD_dsp {
-        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_TAD_dsp'] call grp9_ctab_position_fix_fnc_applyInterfacePosition;";
+        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_TAD_dsp'] call ctab_uip_fnc_applyInterfacePosition;";
     };
 
     class cTab_microDAGR_dsp {
-        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_microDAGR_dsp'] call grp9_ctab_position_fix_fnc_applyInterfacePosition;";
+        onLoad = "_this call cTab_fnc_onIfOpen; ['cTab_microDAGR_dsp'] call ctab_uip_fnc_applyInterfacePosition;";
     };
 };

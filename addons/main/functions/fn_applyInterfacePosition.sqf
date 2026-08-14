@@ -12,7 +12,7 @@ private _backgroundPositionInfo = [_displayName] call cTab_fnc_getBackgroundPosi
 _backgroundPositionInfo params ["_currentBackgroundPosition", "_configBackgroundPosition"];
 
 if (count _configBackgroundPosition < 4) exitWith {
-    diag_log format ["[GRP9 cTab UI Position Fix] Could not resolve background config position for %1.", _displayName];
+    diag_log format ["[cTab UIP] Could not resolve background config position for %1.", _displayName];
     false
 };
 
