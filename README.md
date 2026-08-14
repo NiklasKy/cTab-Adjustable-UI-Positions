@@ -54,8 +54,9 @@ public key.
 - Use cTab's position-toggle keybind and verify the alternate Android entry.
 - Repeat for TAD and MicroDAGR if those devices are used.
 - Restart Arma and confirm that the positions persist.
-- Check the client RPT for `[GRP9 cTab UI Position Fix] Initialized.` and for
-  the absence of cTab script errors.
+- Check the client RPT for
+  `[GRP9 cTab UI Position Fix] Initialized position watcher.` and for the
+  absence of cTab script errors.
 
 ## Compatibility approach
 
