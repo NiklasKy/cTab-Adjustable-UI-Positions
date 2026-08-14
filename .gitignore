@@ -1,5 +1,6 @@
 .hemttout/
-private/
+docs/
+
 *.biprivatekey
 .hemttprivatekey
 *.pbo
