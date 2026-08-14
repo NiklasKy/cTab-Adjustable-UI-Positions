@@ -33,7 +33,7 @@ Keep the existing internal identifiers and change only visible names and documen
 
 ### 3. Clean-room rewrite
 
-Reimplement the Layout Editor integration without using the existing catTab-derived structure. This would simplify attribution questions but adds substantial effort and regression risk without changing the user-facing feature set.
+Reimplement the Layout Editor integration without using the existing lineage. This would simplify attribution questions but adds substantial effort and regression risk without changing the user-facing feature set.
 
 ## Final Design
 
@@ -55,7 +55,7 @@ The existing Git repository is renamed instead of replaced so its history remain
 
 ### Runtime Behavior
 
-The addon exposes six Arma Layout Editor entries: primary and alternate positions for cTab Android, cTab TAD, and cTab MicroDAGR. The UI is placed immediately during display loading to avoid a visible jump from cTab's default position. A lightweight client-side watcher retains compatibility with display lifecycle changes. Existing `cTab_Android_dsp`, `cTab_Tablet_dsp`, and `cTab_MicroDAGR_dsp` profile storage remains unchanged.
+The addon exposes six Arma Layout Editor entries: primary and alternate positions for cTab Android, cTab TAD, and cTab MicroDAGR. The UI is placed immediately during display loading to avoid a visible jump from cTab's default position. A lightweight client-side watcher retains compatibility with display lifecycle changes. Existing `cTab_Android_dsp`, `cTab_TAD_dsp`, and `cTab_microDAGR_dsp` profile storage remains unchanged.
 
 ### Compatibility and Dependencies
 
@@ -75,9 +75,7 @@ The Workshop description contains an overview, features, usage instructions, com
 
 ### Credits and License
 
-The original cTab authors are credited. The Layout Editor lineage is acknowledged briefly in the Workshop credits and README only:
-
-> Layout Editor integration based on the catTab implementation by Cat Harsis and the MokTech Industries fork.
+The original cTab authors are credited. The approved lineage acknowledgement is kept exclusively in the Workshop credits and README.
 
 The project remains licensed under GPL-2.0.
 
