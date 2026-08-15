@@ -1,5 +1,7 @@
 .hemttout/
 docs/
+data/
+releases/
 
 *.biprivatekey
 .hemttprivatekey

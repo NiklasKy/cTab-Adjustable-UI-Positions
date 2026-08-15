@@ -9,3 +9,4 @@ All notable changes to this project are documented in this file.
 - Apply saved positions during display `onLoad` to avoid a visible jump from cTab's default position.
 - Retain a lightweight client-side watcher for primary and alternate position changes.
 - Publish the addon as cTab - Adjustable UI Positions.
+- Add the cTab UIP launcher and Workshop logo.

@@ -5,8 +5,11 @@ mainprefix = "z"
 
 [files]
 include = [
+    "CHANGELOG.md",
+    "ctab_uip_logo_ca.paa",
     "README.md",
     "keys/**",
+    "LICENSE",
 ]
 
 [version]
