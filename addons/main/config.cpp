@@ -7,8 +7,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         version = 1.0;
-        versionStr = "1.0.0";
-        versionAr[] = {1, 0, 0};
+        versionStr = "1.0.1";
+        versionAr[] = {1, 0, 1};
     };
 };
 

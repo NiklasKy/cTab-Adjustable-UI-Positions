@@ -2,6 +2,12 @@
 
 All notable changes to this project are documented in this file.
 
+## 1.0.1 - 2026-08-16
+
+- Add an optional compatibility component for cTAB Advanced [BETA].
+- Use cTAB Advanced's Samsung S7 asset for both Android Layout Editor previews.
+- Keep the original cTab preview paths unchanged for all other cTab variants.
+
 ## 1.0.0 - 2026-08-15
 
 - Add Arma 3 UI layout editor entries for the Android, TAD, and MicroDAGR overlays.

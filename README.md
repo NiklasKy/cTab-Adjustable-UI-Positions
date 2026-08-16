@@ -16,6 +16,11 @@ Compatible cTab derivatives may also work when they retain the required display
 classes and behavior, but support for derivatives is provided on a best-effort
 basis.
 
+cTAB Advanced [BETA] is detected through its optional `ctab_main` component.
+When present, cTab UIP uses that derivative's Samsung S7 asset for the Android
+Layout Editor previews. This compatibility component is skipped automatically
+when cTAB Advanced is not loaded.
+
 ## Supported displays
 
 - Android / GD300 overlay
@@ -62,6 +67,8 @@ public key.
 - Check the client RPT for
   `[cTab UIP] Initialized position watcher.` and for the
   absence of cTab script errors.
+- With cTAB Advanced [BETA], confirm that both Android previews use the Samsung
+  S7 frame and that no missing `android_background_ca.paa` warning appears.
 
 ## Compatibility approach
 
