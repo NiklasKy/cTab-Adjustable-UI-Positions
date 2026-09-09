@@ -92,5 +92,12 @@ version 2. See `LICENSE`.
 
 ## Source and support
 
+For help with this mod, [join our Discord](https://discord.gg/C2adpmAsR9) and
+open a support ticket. This invite automatically assigns the Mod Support role,
+giving you access to the mod support area.
+
+Please include the mod name, version, and a description of the issue. Add
+screenshots or RPT logs when relevant.
+
 - Source: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions
 - Issues: https://github.com/NiklasKy/cTab-Adjustable-UI-Positions/issues
