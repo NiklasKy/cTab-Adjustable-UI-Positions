@@ -4,7 +4,7 @@ class CfgPatches {
         author = "[GRP9] Niklas Ky";
         requiredVersion = 2.18;
         requiredAddons[] = {
-            "ctab_uip_main",
+            "ctab_uip_compat_ctab",
             "ctab_main",
             "ctab"
         };
@@ -12,8 +12,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         version = 1.0;
-        versionStr = "1.0.1";
-        versionAr[] = {1, 0, 1};
+        versionStr = "1.0.2";
+        versionAr[] = {1, 0, 2};
     };
 };
 

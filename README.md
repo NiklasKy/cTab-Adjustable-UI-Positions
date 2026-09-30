@@ -10,16 +10,27 @@ separate primary and alternate positions without modifying cTab itself.
 
 - Arma 3
 - CBA_A3
-- cTab (`CfgPatches` class `cTab`)
+- A supported cTab package
 
 Compatible cTab derivatives may also work when they retain the required display
 classes and behavior, but support for derivatives is provided on a best-effort
 basis.
 
+Explicitly supported providers:
+
+- cTab (`CfgPatches` class `cTab`)
+- cTAB Advanced [BETA]
+- The cTab version bundled with the 60th Solar Detachment Aux Mod
+  (`CfgPatches` class `solar_60th_equipment_cTab`)
+
 cTAB Advanced [BETA] is detected through its optional `ctab_main` component.
 When present, cTab UIP uses that derivative's Samsung S7 asset for the Android
 Layout Editor previews. This compatibility component is skipped automatically
 when cTAB Advanced is not loaded.
+
+The 60th Solar cTab component is detected independently and uses the assets
+bundled with the Aux Mod. It does not require the original `CfgPatches` class
+`cTab`.
 
 ## Supported displays
 
@@ -34,7 +45,7 @@ those dialogs to be dragged and remembers their offsets.
 ## Usage
 
 1. Copy `@cTab Adjustable UI Positions` into the Arma 3 installation directory.
-2. Load CBA_A3, cTab, and this addon.
+2. Load CBA_A3, one supported cTab package, and this addon.
 3. Open Arma 3's UI layout editor.
 4. Move the `cTab` layout entries to the desired positions and save.
 5. Open the corresponding cTab overlay.
@@ -69,6 +80,8 @@ public key.
   absence of cTab script errors.
 - With cTAB Advanced [BETA], confirm that both Android previews use the Samsung
   S7 frame and that no missing `android_background_ca.paa` warning appears.
+- With the 60th Solar Detachment Aux Mod, confirm that all six entries use the
+  bundled Android, TAD, and MicroDAGR preview assets.
 
 ## Compatibility approach
 
